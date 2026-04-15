@@ -1,0 +1,20 @@
+/* Minimal global CSS — most styling is inline to avoid TS import issues */
+*, *::before, *::after { box-sizing: border-box; }
+
+::-webkit-scrollbar { width: 4px; height: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2a2a42; border-radius: 4px; }
+
+body {
+  background-image: radial-gradient(circle, #1a1a2e18 1px, transparent 1px);
+  background-size: 28px 28px;
+  min-height: 100vh;
+}
+
+a { color: inherit; }
+button { font-family: inherit; }
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.3; }
+  50%       { opacity: 0.8; }
+}
